@@ -1,6 +1,7 @@
 <template>
-    <div>
-        Home입니다.
+    <div class="app__main">
+        <h1>Home입니다.</h1>
+        <img alt="Vue logo" src="../assets/logo.png">
     </div>
 </template>
 
@@ -11,5 +12,7 @@ export default {
 </script>
 
 <style scoped>
-
+.app__main{
+    padding:10rem 0;
+}
 </style>

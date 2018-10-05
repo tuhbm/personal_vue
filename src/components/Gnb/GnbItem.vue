@@ -1,6 +1,6 @@
 <template>
     <div>
-        <router-link tag="a" class="gnb__link" v-for="(data, index) in menuItems" :key="index" to="data.link">
+        <router-link tag="a" class="gnb__link" v-for="(data, index) in menuItems" :key="index" :to="data.link">
             {{data.title}}
         </router-link>
     </div>

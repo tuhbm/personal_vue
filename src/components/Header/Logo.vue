@@ -1,6 +1,8 @@
 <template>
     <div class="header__logo">
-        <img src="https://avatars0.githubusercontent.com/u/13491712?s=40&v=4" alt="">
+        <router-link to="/">
+            <img src="https://avatars0.githubusercontent.com/u/13491712?s=40&v=4" alt="">
+        </router-link>
     </div>
 </template>
 
