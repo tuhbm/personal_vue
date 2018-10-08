@@ -25,6 +25,16 @@ const getters = {
 const actions = {
 };
 const mutations = {
+    addTodoItem(state, text) {
+        const _ID = Date.parse(new Date());// ID값 고민해봐야댐.
+        const obj = {
+            id: _ID,
+            text: text,
+            done: false,
+            removeStatus: false
+        };
+        state.todos.push(obj);
+    },
     toggleRemoveState(state, payload) {
         const itemIndex = payload.item.id - 1;
         state.todos[itemIndex].removeStatus = !state.todos[itemIndex].removeStatus;

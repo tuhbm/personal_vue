@@ -1,13 +1,31 @@
 <template>
     <div class="todo__write">
-        <input type="text" class="todo__input">
-        <button type="submit" class="todo__submit">등록</button>
+        <input type="text" class="todo__input" v-model="newItem" @key.enter="addTodoItem">
+        <button type="submit" class="todo__submit" @click.prevent="addTodoItem">등록</button>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'TodoWrite'
+    name: 'TodoWrite',
+    data() {
+        return {
+            newItem: ''
+        };
+    },
+    methods: {
+        addTodoItem() {
+            if (!this.newItem) {
+                return;
+            }
+            const text = this.newItem.trim();
+            this.$store.commit('addTodoItem', text);
+            this.clearInput();
+        },
+        clearInput() {
+            this.newItem = '';
+        }
+    }
 };
 </script>
 
