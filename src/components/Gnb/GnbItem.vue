@@ -23,6 +23,12 @@ export default {
 
 <style scoped>
 .gnb__link{
-    padding: 0 2rem;
+    padding: 0.5rem 2rem;
+    background: #fff;
+    color:#000;
+}
+.gnb__link:hover{
+    background: #000;
+    color:#fff;
 }
 </style>

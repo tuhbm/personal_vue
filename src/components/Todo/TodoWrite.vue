@@ -20,11 +20,15 @@ export default {
     height:5rem;
     margin:0 1% 0 0;
     padding:0;
+    border:1px solid #000;
+    vertical-align: top;
 }
 .todo__submit{
     width:13%;
-    height:5rem;
+    height:5.125rem;
     margin:0;
     padding:2rem 1rem;
+    border:1px solid #000;
+    vertical-align: top;
 }
 </style>

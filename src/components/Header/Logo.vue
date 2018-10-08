@@ -15,5 +15,9 @@ export default {
 <style scoped>
 .header__logo{
     float:left;
+    vertical-align: top;
+}
+.header__logo a{
+    display:block;
 }
 </style>

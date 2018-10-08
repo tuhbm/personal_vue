@@ -26,6 +26,8 @@ export default {
     overflow:hidden;
     width:100%;
     height: 5rem;
+    padding:1rem 1rem;
+    box-sizing:border-box;
     background-color:#fff;
 }
 </style>

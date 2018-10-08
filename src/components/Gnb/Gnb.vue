@@ -1,5 +1,5 @@
 <template>
-    <div class="header__logo">
+    <div class="header__menu">
         <gnb-item></gnb-item>
     </div>
 </template>
@@ -16,7 +16,8 @@ export default {
 </script>
 
 <style scoped>
-.header__logo {
+.header__menu {
     float:right;
+    margin-top: 1rem;
 }
 </style>

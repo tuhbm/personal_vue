@@ -1,6 +1,6 @@
 <template>
     <div class="app__footer">
-        Footer입니다.
+        <small>Copyright© Since 2018, <a href="https://tuhbm.github.io/">taekyun Kim</a> All rights reserved</small>
     </div>
 </template>
 
@@ -14,7 +14,8 @@ export default {
 .app__footer{
     width:100%;
     padding:2rem 0;
-    border-top:1px dotted #000;
+    margin-top: 1rem;
+    border-top:1px solid #000;
     background-color: #fff;
 }
 </style>
