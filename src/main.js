@@ -19,12 +19,5 @@ new Vue({
           storageBucket: "vue-project-56bfb.appspot.com",
           messagingSenderId: "561682636729"
       })
-      firebase.auth().onAuthStateChanged((user) => {
-          if (user) {
-              this.$store.dispatch('autoSignIn', user) // 로그인 유지하기
-              this.$store.dispatch('fetchUserData') // 로그인 유지하기
-          }
-      })
-      this.$store.dispatch('loadMeetups')
   }
 }).$mount('#app')
