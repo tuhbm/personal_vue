@@ -17,6 +17,15 @@ let config = {
 
 firebase.initializeApp(config);
 
+firebase.auth().onAuthStateChanged((user) => {
+  console.log("로그인 정보가 변경되었습니다.");
+  if (!user) {
+    console.log("로그인이 필요합니다.");
+    this.$router.replace('/login');
+  } else{
+    console.log("가입완료 -> "+user.email);
+  }
+});
 
 new Vue({
   render: h => h(App),

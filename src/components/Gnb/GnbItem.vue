@@ -17,9 +17,18 @@ export default {
     computed: {
         menuItems() {
             let items = [
-                {title: 'TODO', link: '/todo'},
-                {title: 'Calculator', link: '/calculator'},
+              {title: 'Login', link: '/login'},
+              {title: 'Sign-Up', link: '/signup'},
             ];
+
+            if(this.userIsAuthenticated) {
+                items = [
+                  {title: 'TODO', link: '/todo'},
+                  {title: 'Calculator', link: '/calculator'},
+                  {title: 'log-out', link: '/home'},
+                ];
+            }
+
             return items;
         }
     }
