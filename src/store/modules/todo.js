@@ -8,7 +8,8 @@ const state = {
         { id: 6, text: '할일6', done: true, removeStatus: true },
         { id: 7, text: '할일7', done: false, removeStatus: true },
         { id: 8, text: '할일7', done: false, removeStatus: true }
-    ]
+    ],
+    lastIndex: 8
 };
 
 const getters = {
@@ -25,15 +26,18 @@ const getters = {
 const actions = {
 };
 const mutations = {
-    addTodoItem(state, text) {
-        const _ID = Date.parse(new Date());// ID값 고민해봐야댐.
+    addTodoItem(state, payload) {
+        const _ID = state.lastIndex +1;// ID값 고민해봐야댐.
         const obj = {
             id: _ID,
-            text: text,
+            text: payload,
             done: false,
             removeStatus: false
         };
+        state.lastIndex = _ID;
         state.todos.push(obj);
+        const id = payload.id
+        state.user.fbKeys[id] = payload.fbKeys
     },
     toggleRemoveState(state, payload) {
         const itemIndex = payload.item.id - 1;

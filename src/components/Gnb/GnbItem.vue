@@ -9,6 +9,11 @@
 <script>
 export default {
     name: 'GnbItem',
+    data() {
+        return {
+            userLogin: false
+        };
+    },
     computed: {
         menuItems() {
             let items = [

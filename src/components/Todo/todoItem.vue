@@ -1,9 +1,12 @@
 <template>
-    <div class="todo__item" :class="deleteItem">
-        <label for="`item${item.id}`" class="item__label">{{ checkProgressText }}</label>
-        <input :id="`item${item.id}`" class="item__checkbox" type="checkbox" v-model="checkProgress">
+    <div class="todo__item" :class="isDelete">
+        <label :for="`item${item.id}`" class="item__label">{{ checkProgressText }}
+            <input :id="`item${item.id}`" class="item__checkbox" :disabled="checkDelete" type="checkbox" v-model="item.done">
+        </label>
         <p class="item__text" :class="{isFinish}" v-if="!isModify">{{item.text}}</p>
-        <input type="text" class="item_input" v-model="item.text" v-else>
+        <label for="itemInput" v-else>
+            <input type="text" id="itemInput" class="item_input" v-model="item.text">
+        </label>
         <div class="item_area">
             <button type="button" class="item_button item_modify" @click.prevent="statusModify" v-if="!checkDelete && isModify">완료</button>
             <button type="button" class="item_button item_modify" @click.prevent="statusModify" v-if="!checkDelete && !isModify">수정</button>
@@ -14,19 +17,18 @@
 </template>
 
 <script>
-import { mapMutations, mapState } from 'vuex';
+import { mapMutations } from 'vuex';
+
 export default {
     name: 'todoItem',
     data() {
         return {
-            isModify: ''
+            isModify: '',
+            items: []
         };
     },
     props: ['item'],
     computed: {
-        ...mapState({
-            message: state => state.todos.text
-        }),
         checkProgress() {
             return this.item.done;
         },
@@ -39,8 +41,8 @@ export default {
         checkDelete() {
             return this.item.removeStatus;
         },
-        deleteItem() {
-            return this.checkDelete ? 'isDelete' :'';
+        isDelete() {
+            return this.checkDelete ? 'isDelete' : '';
         }
     },
     methods: {
@@ -93,14 +95,35 @@ export default {
     float:right;
 }
 .item_button{
+    padding:0.5rem 2rem;
     margin-left:0.5rem;
-    background-color:transparent;
+    color:#fff;
+    border:0;
+    box-shadow:#000 2px 3px 4px;
+    border-radius: 5rem;
 }
 .item_button:first-child{
     margin-left:0;
 }
-.item_button:active{
-    background-color: #000;
-    color: #fff;
+.item_modify{
+    background:midnightblue;
+}
+.item_modify:active{
+    background-color: deepskyblue;
+    color:#000;
+}
+.item_delete{
+    background:darkred;
+}
+.item_delete:active{
+    background:indianred;
+    color:#000;
+}
+.item_restore{
+    background:darkgreen;
+}
+.item_restore:active{
+    background:greenyellow;
+    color:#000;
 }
 </style>

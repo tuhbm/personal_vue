@@ -1,0 +1,118 @@
+[debug] [2018-10-10T04:52:43.178Z] ----------------------------------------------------------------------
+[debug] [2018-10-10T04:52:43.180Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\es-tkkim\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2018-10-10T04:52:43.180Z] CLI Version:   5.0.1
+[debug] [2018-10-10T04:52:43.180Z] Platform:      win32
+[debug] [2018-10-10T04:52:43.180Z] Node Version:  v8.11.1
+[debug] [2018-10-10T04:52:43.183Z] Time:          Wed Oct 10 2018 13:52:43 GMT+0900 (대한민국 표준시)
+[debug] [2018-10-10T04:52:43.183Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-10T04:52:43.210Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-10T04:52:43.211Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\es-tkkim\Desktop\study\personal_vue
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-10-10T04:52:53.325Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-10-10T04:52:53.326Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-10-10T04:52:53.643Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-10T04:52:53.657Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ 
+[debug] [2018-10-10T04:52:54.242Z] Error: self signed certificate in certificate chain
+    at TLSSocket.<anonymous> (_tls_wrap.js:1105:38)
+    at emitNone (events.js:106:13)
+    at TLSSocket.emit (events.js:208:7)
+    at TLSSocket._finishInit (_tls_wrap.js:639:8)
+    at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:469:38)
+[error] 
+[error] Error: Server Error. self signed certificate in certificate chain
+[debug] [2018-10-10T04:53:37.180Z] ----------------------------------------------------------------------
+[debug] [2018-10-10T04:53:37.182Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\es-tkkim\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2018-10-10T04:53:37.183Z] CLI Version:   5.0.1
+[debug] [2018-10-10T04:53:37.183Z] Platform:      win32
+[debug] [2018-10-10T04:53:37.183Z] Node Version:  v8.11.1
+[debug] [2018-10-10T04:53:37.186Z] Time:          Wed Oct 10 2018 13:53:37 GMT+0900 (대한민국 표준시)
+[debug] [2018-10-10T04:53:37.186Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-10T04:53:37.215Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-10T04:53:37.216Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\es-tkkim\Desktop\study\personal_vue
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-10-10T04:53:56.310Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ 
+[debug] [2018-10-10T04:53:56.879Z] Error: self signed certificate in certificate chain
+    at TLSSocket.<anonymous> (_tls_wrap.js:1105:38)
+    at emitNone (events.js:106:13)
+    at TLSSocket.emit (events.js:208:7)
+    at TLSSocket._finishInit (_tls_wrap.js:639:8)
+    at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:469:38)
+[error] 
+[error] Error: Server Error. self signed certificate in certificate chain
+[debug] [2018-10-10T04:54:48.798Z] ----------------------------------------------------------------------
+[debug] [2018-10-10T04:54:48.800Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\es-tkkim\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2018-10-10T04:54:48.800Z] CLI Version:   5.0.1
+[debug] [2018-10-10T04:54:48.800Z] Platform:      win32
+[debug] [2018-10-10T04:54:48.800Z] Node Version:  v8.11.1
+[debug] [2018-10-10T04:54:48.804Z] Time:          Wed Oct 10 2018 13:54:48 GMT+0900 (대한민국 표준시)
+[debug] [2018-10-10T04:54:48.804Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-10T04:54:48.830Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-10T04:54:48.831Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\es-tkkim\Desktop\study\personal_vue
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-10-10T04:54:54.125Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ 
+[debug] [2018-10-10T04:54:54.621Z] Error: self signed certificate in certificate chain
+    at TLSSocket.<anonymous> (_tls_wrap.js:1105:38)
+    at emitNone (events.js:106:13)
+    at TLSSocket.emit (events.js:208:7)
+    at TLSSocket._finishInit (_tls_wrap.js:639:8)
+    at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:469:38)
+[error] 
+[error] Error: Server Error. self signed certificate in certificate chain
