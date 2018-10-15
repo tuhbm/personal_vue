@@ -95,14 +95,35 @@ export default {
     float:right;
 }
 .item_button{
+    padding:0.5rem 2rem;
     margin-left:0.5rem;
-    background-color:transparent;
+    color:#fff;
+    border:0;
+    box-shadow:#000 2px 3px 4px;
+    border-radius: 5rem;
 }
 .item_button:first-child{
     margin-left:0;
 }
-.item_button:active{
-    background-color: #000;
-    color: #fff;
+.item_modify{
+    background:midnightblue;
+}
+.item_modify:active{
+    background-color: deepskyblue;
+    color:#000;
+}
+.item_delete{
+    background:darkred;
+}
+.item_delete:active{
+    background:indianred;
+    color:#000;
+}
+.item_restore{
+    background:darkgreen;
+}
+.item_restore:active{
+    background:greenyellow;
+    color:#000;
 }
 </style>
